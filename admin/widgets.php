@@ -3,6 +3,7 @@
 $ttrust_theme_name = "Port";
 
 /*
+
 WIDGETS constructor has changed from PHP5 to PHP 7
 EXAMPLE:
 class MyCustomWidget extends WP_Widget {
@@ -20,6 +21,7 @@ class MyCustomWidget extends WP_Widget {
 		parent::__construct('class_name', $ttrust_theme_name.' '.__('Widget Name', 'language'), $widget_ops);
 	}
 }
+
 */
 
 /* /////////////////////////////////////////////////////////////////////
@@ -419,6 +421,7 @@ class TTrust_Testimonials extends WP_Widget {
 register_widget('TTrust_Testimonials');
 
 /*
+
 WIDGETS constructor has changed from PHP5 to PHP 7
 EXAMPLE:
 class MyCustomWidget extends WP_Widget {
@@ -436,4 +439,5 @@ class MyCustomWidget extends WP_Widget {
 		parent::__construct('class_name', $ttrust_theme_name.' '.__('Widget Name', 'language'), $widget_ops);
 	}
 }
+
 */
