@@ -19,7 +19,7 @@ body {
 	background:url(/wp-content/themes/soul-london/images/maintenance.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-position: 90% center;
 	background-attachment: fixed;
 }
 </style>
