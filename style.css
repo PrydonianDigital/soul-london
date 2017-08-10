@@ -1653,7 +1653,7 @@ h2.extraSpacing { padding-top: 10px; }
 	margin-bottom: 5px;
 }
 
-div[id*='latest_tweets_widget'], #latest_tweets_widget-4{
+div[id*='latest_tweets_widget'] {
   margin: 0 auto 20px !important;
   float: none;
   width: 80%;
