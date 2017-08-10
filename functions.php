@@ -1,6 +1,7 @@
 <?php
 
-add_action( 'dashboard_glance_items', 'my_add_cpt_to_dashboard' );
+	// Add extras to Dashboard
+	add_action( 'dashboard_glance_items', 'my_add_cpt_to_dashboard' );
 	function my_add_cpt_to_dashboard() {
 		$showTaxonomies = 1;
 		if ($showTaxonomies) {
