@@ -1,0 +1,298 @@
+/*
+Theme Name: Soul London
+Theme URI: http://soul.lpndon
+Author: tMark Duwe
+Author URI: http://prydonian.digital
+Description: Custom theme for Soul London
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: soul
+Tags:
+*/
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Raleway';
+	padding-top: 80px;
+	overflow-x: hidden;
+	transition: all 0.2s ease-in-out;
+}
+#mobileMenu {
+	position: fixed;
+	right: -200px;
+	top: 0;
+	height: 100%;
+	width: 200px;
+	background: var(--color-silver);
+	z-index: 1002;
+	transition: all 0.2s ease;
+	-webkit-backface-visibility: hidden;
+}
+#mobileMenu .button {
+	border-radius: var(--component-border-radius);
+	color: var(--color-black);
+}
+body.open #mobileMenu {
+	right: 0;
+}
+header {
+	background-color:var(--color-silver);
+	overflow: hidden;
+	padding: 0 30px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1001;
+}
+header h1 {
+	margin: 0;
+	float: left;
+}
+header h1 img {
+	width: 88px;
+	height: 54px;
+	margin: 12px 0;
+}
+nav.main-menu {
+	float: right;
+}
+nav.mobile-menu {
+	display: none;
+	float: right;
+	font-size: 3rem;
+	line-height: 80px;
+}
+nav.mobile-menu a {
+	color: var(--color-black);
+	cursor: pointer;
+}
+nav.main-menu ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav.main-menu ul.menu li {
+	display: inline-block;
+	margin: 0 20px;
+	line-height: 81px;
+}
+nav.main-menu ul.menu li:last-child {
+	margin-right: 0;
+}
+nav.main-menu ul.menu li a {
+	font-weight: 400;
+	display: block;
+	color: var(--color-black);
+	font-size: 1.4rem;
+	height: 80px;
+	border-bottom: 0px solid var(--color-black);
+	transition: all 0.2s ease;
+}
+nav.main-menu ul.menu li a:hover {
+	text-decoration: none;
+	border-bottom: 4px solid var(--color-black);
+	height: 80px;
+}
+.wrapper {
+	width: 100%;
+	max-width: 80rem;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	display: grid;
+	grid-template-columns: repeat(12, minmax(0, 1fr));
+	grid-gap: 2rem;
+}
+.heroWrapper {
+	grid-gap: 0;
+}
+.wrapper:after , .container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.hero {
+	grid-column: auto / span 12;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	padding: 4rem 0;
+}
+.container.clients .wrapper {
+	max-width: 90%;
+}
+.container.blog .wrapper {
+	max-width: 62.5em;
+}
+.container.whoweare .wrapper {
+	max-width: 100%;
+	min-height: 75vh;
+}
+.container.whoweare {
+	background-size: 100% !important;
+	background-position: center 20% !important;
+	background-repeat: no-repeat !important;
+}
+.box.full {
+	grid-column: auto / span 12;
+}
+.container.whoweare .box.full {
+
+}
+.pink {
+	background-color: var(--color-pink);
+	color: var(--color-white);
+}
+.pink .button,.pink button,.pink [type=submit], .black .button,.black button,.black [type=submit], .paleblue .button,.paleblue button,.paleblue [type=submit] {
+	border-color: var(--color-white);
+}
+.white .button,.white button,.white [type=submit] {
+	border-color: var(--color-black);
+	color: var(--color-black);
+}
+.black {
+	background-color: var(--color-dark);
+	color: var(--color-white);
+}
+.pink a {
+	color: var(--color-white);
+}
+.paleblue {
+	background-color: var(--color-paleblue);
+	color: var(--color-white);
+}
+.yellow {
+	background-color: var(--color-yellow);
+	color: var(--color-black);
+}
+form.wpcf7-form {
+	display: grid;
+	grid-template-columns: repeat(12, minmax(0, 1fr));
+	grid-gap: 2rem;
+	margin: 0 auto;
+	padding: 0 4rem;
+}
+.col-6 {
+	grid-column: auto / span 6;
+}
+.box.projects {
+	grid-column: auto / span 4;
+	overflow: hidden;
+	position: relative;
+	transform: translate3d(0);
+	background: var(--color-dark);
+}
+.box.projects img {
+	transform: scale(2,2);
+	transition: all 0.35s ease-in-out;
+	opacity: 1;
+}
+.box.projects:hover img {
+	transform: scale(2.5,2.5);
+	opacity: 0.2;
+}
+.box.projects .button {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 100;
+	border-color: var(--color-white);
+	color: var(--color-white);
+	max-width: 250px;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+.box.projects:hover .button {
+	opacity: 1;
+}
+.box.client {
+	grid-column: auto / span 2;
+	overflow: hidden;
+	position: relative;
+	align-self: center;
+	text-align: center;
+}
+.box.client img {
+	max-width: 100%;
+	height: auto;
+}
+.box.blog {
+	grid-column: auto / span 4;
+	overflow: hidden;
+	position: relative;
+	align-self: top;
+}
+.latest-tweets ul, .latest-tweets ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.latest-tweets a {
+	color:var(--color-white);
+}
+.latest-tweets .tweet-details {
+	display: none;
+}
+
+@media screen and (max-width: 80em) {
+	nav.main-menu ul.menu li {
+		margin: 0 10px;
+	}
+	nav.main-menu ul.menu li a {
+		font-size: 1rem;
+	}
+	.wrapper {
+		max-width: 90%;
+	}
+}
+@media screen and (max-width: 55em) {
+	nav.main-menu ul.menu li {
+		margin: 0 10px;
+	}
+	nav.main-menu ul.menu li a {
+		font-size: 0.8rem;
+	}
+	form.wpcf7-form {
+		grid-gap: 1rem;
+		padding: 0;
+	}
+}
+@media screen and (max-width: 48em) {
+	nav.mobile-menu {
+		display: block;
+	}
+	nav.main-menu {
+		display: none;
+	}
+	form.wpcf7-form, .wrapper {
+		grid-gap: 0;
+	}
+	.container {
+		padding: 2rem 0;
+	}
+	.wrapper {
+		padding: 0 1rem;
+		max-width: 100%;
+	}
+	.box, .box.projects, .box.client, .box.blog {
+		grid-column: auto / span 12;
+		margin: 2rem 0;
+	}
+	.col-6 {
+		grid-column: auto / span 12;
+		margin: 0;
+	}
+	.container.whoweare .wrapper {
+		min-height: 25vh;
+	}
+}
