@@ -67,3 +67,6 @@
 			return array();
 		});
 	});
+	
+	// Remove editor for files/plugins
+	define( 'DISALLOW_FILE_EDIT', true );
