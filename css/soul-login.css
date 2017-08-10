@@ -1,0 +1,58 @@
+body.login {
+	background-image: url('../images/login.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+.login h1 {
+	width: 302px;
+	text-align: center;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	margin: 0 auto;
+	padding: 0 24px 0.5em 24px;
+}
+.login h1 a {
+	background-image: url('../images/soul@2x.png');
+	background-size: cover;
+	width: 176px;
+	height: 108px;
+	margin: 0 auto;
+}
+.login form {
+	background: #e03a8d;
+}
+.login label {
+	color: #fff;
+}
+.login form .input {
+	border: solid 1px #232856;
+}
+.login form .button-primary, .login form .button-primary:focus, .login form .button-primary:hover {
+	margin: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 140px !important;
+    height: 34px !important;
+    line-height: 1 !important;
+    padding: 8px 15px !important;
+    background: transparent;
+    text-align: center !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    -webkit-appearance: none;
+    transition: all 0.25s ease;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+}
+p#nav, p#backtoblog {
+	display: none;
+}

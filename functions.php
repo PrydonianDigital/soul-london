@@ -70,3 +70,17 @@
 	
 	// Remove editor for files/plugins
 	define( 'DISALLOW_FILE_EDIT', true );
+	
+	// Custom login
+	function soul_login() {
+		echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/css/soul-login.css" />';
+	}
+	add_action('login_head', 'soul_login');
+	function my_login_logo_url() {
+		return get_bloginfo( 'url' );
+	}
+	add_filter( 'login_headerurl', 'my_login_logo_url' );
+	function my_login_logo_url_title() {
+		return 'Soul London';
+	}
+	add_filter( 'login_headertitle', 'my_login_logo_url_title' );
