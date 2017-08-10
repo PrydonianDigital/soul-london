@@ -71,6 +71,12 @@
 	// Remove editor for files/plugins
 	define( 'DISALLOW_FILE_EDIT', true );
 	
+	// Remove WP Generator number
+	function wpversion_remove_version() {
+		return '';
+	}
+	add_filter('the_generator', 'wpversion_remove_version');
+	
 	// Custom login
 	function soul_login() {
 		echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/css/soul-login.css" />';
