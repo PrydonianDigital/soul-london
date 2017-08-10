@@ -16,12 +16,10 @@
 	<?php $banner_main_font = of_get_option('ttrust_banner_main_font'); ?>
 	<?php $banner_secondary_font = of_get_option('ttrust_banner_secondary_font'); ?>
 	<?php $home_message_font = of_get_option('ttrust_home_message_font'); ?>
-
 	<meta property="og:title" content="<?php the_title(); ?>" />
 	<meta name="description" content="<?php the_excerpt(); ?>" />
 	<meta property="og:description" content="<?php the_excerpt(); ?>" />
 	<meta property="og:image" content="<?php the_post_thumbnail_url(); ?>" />
-
 	<?php if ($menu_font != "") : ?>
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=<?php echo(urlencode($menu_font)); ?>:regular,italic,bold,bolditalic" />
 	<?php endif; ?>
